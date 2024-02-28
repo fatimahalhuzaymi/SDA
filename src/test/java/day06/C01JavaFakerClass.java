@@ -13,6 +13,7 @@ public class C01JavaFakerClass {
         String fullname1= faker.name().fullName();
         String fullname2= faker.name().fullName();
 
+
         System.out.println("fullname"+fullname1);
         System.out.println("faullname"+fullname2);
 
