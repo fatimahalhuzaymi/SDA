@@ -85,6 +85,7 @@ public class Challange {
 
     @After
     public void tearDown(){
+
         driver.quit();
     }
 }
