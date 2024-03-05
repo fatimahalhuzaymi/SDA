@@ -40,6 +40,7 @@ public class C03DraqandDop extends TestBase {
         dragCapitolInCountryBox("Oslo", "Norway");
         dragCapitolInCountryBox("Stockholm", "Sweden");
 
+
     }
     public void dragCapitolInCountryBox(String capital, String country){
         By cap = By.xpath("//div[text()='"+ capital +"'][2]");
