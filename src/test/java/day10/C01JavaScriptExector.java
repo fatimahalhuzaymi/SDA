@@ -1,5 +1,6 @@
 package day10;
 
+import day08.utilities.JScriptUtilities;
 import day08.utilities.TestBase;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -14,7 +15,7 @@ public class C01JavaScriptExector extends TestBase {
 
     JavascriptExecutor js =(JavascriptExecutor)driver;
     //js.executeScript("alert(\"hi SDA\");");
-
+    driver.switchTo().alert().accept();
     js.executeScript("window scrollBy(0,3000)");
     WebElement button = driver.findElement(By.id("bottom-cta-section__header"));
 
@@ -22,6 +23,8 @@ public class C01JavaScriptExector extends TestBase {
     int y= button.getLocation().getY();
 
     js.executeScript("argument[0].scrollIntoView();",driver.findElement(By.id("bottom-cta-section__header")));
+
+    JScriptUtilities.clickElementByJS(driver,button);
 
 }
 

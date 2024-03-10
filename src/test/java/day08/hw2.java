@@ -27,5 +27,6 @@ public class hw2 extends TestBase {
         Assert.assertTrue(newWindow.getText().contains("New Window"));
         //Go back to the previous window and then verify the title: “The Internet”
 
+
     }
 }
